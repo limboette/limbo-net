@@ -55,7 +55,7 @@
 <header class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable">
         <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><a class="editable-style image-element silex-id-1707165842043-19 header page-link-active" title="Limbo of Wonders logo, horizontal" href="index.html"><img src="assets/LoW%20logo%2040px.png" alt="Limbo of Wonders logo, horizontal version"></a><div class="editable-style silex-id-1552765147494-1 text-element silex-component prevent-resizable prevent-auto-z-index header hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1708336040192_846 closed">
+<div class="hamburger-menu_1708349716828_788 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -68,11 +68,11 @@
             
                 <li><a href="index.html" class="page-link-active">Home</a></li>
             
-                <li><a href="our_game.html">Our Game</a></li>
+                <li><a href="our_game.html" class="">Our Game</a></li>
             
-                <li><a href="limboai.html">LimboAi</a></li>
+                <li><a href="limboai.html" class="">LimboAi</a></li>
             
-                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="about_us.html" class="">About Us</a></li>
             
             </ul>
         </nav>
@@ -84,13 +84,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1708336040192_846').classList.remove('open');
-    document.querySelector('.hamburger-menu_1708336040192_846').classList.add('closed');
+    document.querySelector('.hamburger-menu_1708349716828_788').classList.remove('open');
+    document.querySelector('.hamburger-menu_1708349716828_788').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1708336040192_846').classList.add('open');
-    document.querySelector('.hamburger-menu_1708336040192_846').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1708349716828_788').classList.add('open');
+    document.querySelector('.hamburger-menu_1708349716828_788').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -100,7 +100,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1708336040192_846').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1708349716828_788').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -108,10 +108,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1708336040192_846 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1708349716828_788 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1708336040192_846 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1708349716828_788 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -119,7 +119,7 @@
 })();
 </script>
 </div></div><a class="editable-style silex-id-1537545843556-0 container-element page-link-active" href="index.html"></a><div class="editable-style silex-id-1537543262916-6 text-element hide-on-mobile header"><div class="silex-element-content normal"><p><a href="index.html" class="page-link-active">Home</a> <a href="our_game.html" class="">Our_Game</a> <a href="limboai.html" class="">LimboAI</a>&nbsp;<a href="about_us.html" class="">About_Us</a></p></div></div></div>
-    </header><section class="editable-style section-element silex-id-1707165481392-15 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1707165481392-16 silex-element-content website-width prevent-draggable"><div class="editable-style image-element silex-id-1707165605016-18" title="Limbo of Wonders, graphical logo"><img src="assets/limbo_throw.png" alt="A version of the Limbo of Wonders logo. It includes the company name and two robots throwing cogs, standing on either side of the letters."></div></div></section><section class="container-element editable-style silex-id-1537643586565-1 section-element prevent-resizable page-home paged-element button-invert paged-element-visible"><div class="editable-style silex-id-1537643586561-0 container-element silex-element-content website-width"><div class="editable-style silex-id-1537643777522-2 text-element text-style-2"><div class="silex-element-content normal"><h2>Who We are</h2><p>Limbo of Wonders is an indie game development team of two. We are dedicated to making games – doing design work and art, programming and animating... all the good stuff. We are also developing cool tools for the Godot Engine.<br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div>﻿﻿</div><div class="editable-style image-element silex-id-1707166131709-23" title="Sergii of the Limbo of Wonders"><img src="assets/serg.png" alt="Portrait of Sergii of the Limbo of Wonders as a robot"></div><div class="editable-style image-element silex-id-1707166177627-24" title="Ola of the Limbo of Wonders"><img src="assets/ola.png" alt="Portrait of Ola of the Limbo of Wonders as a robot"></div><a class="editable-style text-element silex-id-1537645636921-19 button-invert" href="about_us.html" title="Social Media links and Contact"><div class="silex-element-content normal"><p>Stay connected! →<br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></a></div></section><section class="editable-style section-element silex-id-1537645224759-14 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1537645224756-13 website-width" title=""><div class="editable-style text-element silex-id-1707080648540-1 text-style-2" title=""><div class="silex-element-content normal"><h2>Our Game</h2><p>We are creating an action-adventure metroidvania-like game set in a fantasy underwater world of Catlantis. Focusing on exploration and wonder, the game invites you to delve deeper into the mysterious vistas and uncover long-forgotten secrets.</p><p>The game is in active development and yet untitled. You can follow the progress and become part of the community by <a href="about_us.html" class="">following us</a>.<br></p></div></div><div class="editable-style image-element silex-id-1707166294284-26" title="Area art from the game"><img src="assets/catlantis_main.png" alt="Art representing four different areas of the game set in the world of Catlantis"></div><a class="editable-style text-element silex-id-1707080836228-3 button-invert" href="our_game.html"><div class="silex-element-content normal"><p>Find out more
+    </header><section class="editable-style section-element silex-id-1707165481392-15 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1707165481392-16 silex-element-content website-width prevent-draggable"><div class="editable-style image-element silex-id-1707165605016-18" title="Limbo of Wonders, graphical logo"><img src="assets/limbo_throw.png" alt="A version of the Limbo of Wonders logo. It includes the company name and two robots throwing cogs, standing on either side of the letters."></div></div></section><section class="container-element editable-style silex-id-1537643586565-1 section-element prevent-resizable page-home paged-element button-invert paged-element-visible"><div class="editable-style silex-id-1537643586561-0 container-element silex-element-content website-width"><div class="editable-style silex-id-1537643777522-2 text-element text-style-2"><div class="silex-element-content normal"><h2>Who We are</h2><p>Limbo of Wonders is an indie game development team of two. We are dedicated to making games – doing design work and art, programming and animating... all the good stuff. We are also developing cool tools for the Godot Engine.<br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div>﻿﻿</div><div class="editable-style image-element silex-id-1707166131709-23" title="Sergii of the Limbo of Wonders"><img src="assets/serg.png" alt="Portrait of Sergii of the Limbo of Wonders as a robot"></div><div class="editable-style image-element silex-id-1707166177627-24" title="Ola of the Limbo of Wonders"><img src="assets/ola.png" alt="Portrait of Ola of the Limbo of Wonders as a robot"></div><a class="editable-style text-element silex-id-1537645636921-19 button-invert" href="about_us.html" title="Social Media links and Contact"><div class="silex-element-content normal"><p>Stay connected! →<br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></a></div></section><section class="editable-style section-element silex-id-1537645224759-14 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1537645224756-13 website-width" title=""><div class="editable-style text-element silex-id-1707080648540-1 text-style-2" title=""><div class="silex-element-content normal"><h2>Our Game</h2><p>We are creating an action-adventure metroidvania-like game set in a fantasy underwater world of Catlantis. Focusing on exploration and wonder, the game invites you to delve deeper into the mysterious vistas and uncover long-forgotten secrets.</p><p>The game is in active development and yet untitled. You can follow the progress and become part of the community by <a href="about_us.html" class="">following us</a>.<br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div class="editable-style image-element silex-id-1707166294284-26" title="Area art from the game"><img src="assets/catlantis_main.png" alt="Art representing four different areas of the game set in the world of Catlantis"></div><a class="editable-style text-element silex-id-1707080836228-3 button-invert" href="our_game.html"><div class="silex-element-content normal"><p>Find out more
 
 →
 
