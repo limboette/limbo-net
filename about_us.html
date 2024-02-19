@@ -55,7 +55,7 @@
 <header class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable">
         <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><div class="editable-style silex-id-1552765147494-1 text-element silex-component prevent-resizable prevent-auto-z-index header hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1708352450045_208 closed">
+<div class="hamburger-menu_1708352583175_22 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -68,7 +68,7 @@
             
                 <li><a href="index.html">Home</a></li>
             
-                <li><a href="our_game.html">Our Game</a></li>
+                <li><a href="our_game.html" class="">Our Game</a></li>
             
                 <li><a href="limboai.html">LimboAI</a></li>
             
@@ -84,13 +84,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1708352450045_208').classList.remove('open');
-    document.querySelector('.hamburger-menu_1708352450045_208').classList.add('closed');
+    document.querySelector('.hamburger-menu_1708352583175_22').classList.remove('open');
+    document.querySelector('.hamburger-menu_1708352583175_22').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1708352450045_208').classList.add('open');
-    document.querySelector('.hamburger-menu_1708352450045_208').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1708352583175_22').classList.add('open');
+    document.querySelector('.hamburger-menu_1708352583175_22').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -100,7 +100,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1708352450045_208').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1708352583175_22').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -108,10 +108,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1708352450045_208 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1708352583175_22 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1708352450045_208 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1708352583175_22 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -120,7 +120,7 @@
 </script>
 </div></div><div class="editable-style silex-id-1537543262916-6 text-element hide-on-mobile header"><div class="silex-element-content normal"><p><a href="index.html" class="">Home</a> <a href="our_game.html" class="">Our_Game</a> <a href="limboai.html" class="">LimboAI</a>&nbsp;<a href="about_us.html" class="page-link-active">About_Us</a></p></div></div><a class="editable-style image-element silex-id-1708352108086-1" href="index.html"><img src="assets/LoW%20logo%2040px.png"></a></div>
     </header><section class="editable-style section-element silex-id-1707138889961-12 page-about_us paged-element paged-element-visible"><div class="editable-style container-element silex-id-1707138889962-13 silex-element-content website-width prevent-draggable"><div class="editable-style text-element silex-id-1707143746849-3 text-style-2" title=""><div class="silex-element-content normal"><h2>A little History</h2><p>We are a husband and wife team hailing from Ukraine 
-<a href="https://apps.timwhitlock.info/emoji/tables/unicode#emoji-modal" title="U+1F499">💙</a><a href="https://apps.timwhitlock.info/emoji/tables/unicode#emoji-modal" title="U+1F49B">💛</a>. Limbo of Wonders had its beginnings in doing game jams, specifically <a href="https://ldjam.com/">Ludum Dare</a>, which will always be dear to us. Those small games you can check out on our <a href="https://limboofwonders.itch.io/" title="Limbo of Wonders Itch page">Itch page</a>. Over the years, we learned a lot, developed our skillset and toolset, and fell in love with the <a href="https://godotengine.org/">Godot Engine</a>.<br></p><p>Currently, we we developing our yet unnamed&nbsp;<a href="our_game.html" class="">underwater exploration game</a>, as well as maintaining our <a href="limboai.html" class="">LimboAI</a> plugin for Godot.<br></p></div></div><div class="editable-style image-element silex-id-1707163556018-0" title="Sergii of the Limbo of Wonders"><img src="assets/serg.png" alt="Portrait of Sergii of the Limbo of Wonders as a robot"></div><div class="editable-style image-element silex-id-1707163579258-1" title="Ola of the Limbo of Wonders"><img src="assets/ola_flipped.png" alt="Portrait of Ola of the Limbo of Wonders as a robot"></div></div></section><section class="container-element editable-style silex-id-1545056415237-3 section-element prevent-resizable page-contact page-about_us paged-element paged-element-visible"><div class="editable-style silex-id-1545056415233-2 container-element silex-element-content website-width"><div class="editable-style text-element text-style-2 silex-id-1545056530213-6"><div class="silex-element-content normal"><h2>Contact Us<br></h2></div>﻿﻿</div><div class="editable-style silex-id-1548871340538-0 html-element silex-component silex-component-form silex-use-height-not-minheight silex-element-content-full-height"><div class="silex-element-content"><form id="id_1708351982164_999" action="https://formspree.io/limboofwonders@gmail.com" method="POST">
+<a href="https://apps.timwhitlock.info/emoji/tables/unicode#emoji-modal" title="U+1F499">💙</a><a href="https://apps.timwhitlock.info/emoji/tables/unicode#emoji-modal" title="U+1F49B">💛</a>. Limbo of Wonders had its beginnings in doing game jams, specifically <a href="https://ldjam.com/">Ludum Dare</a>, which will always be dear to us. Those small games you can check out on our <a href="https://limboofwonders.itch.io/" title="Limbo of Wonders Itch page">Itch page</a>. Over the years, we learned a lot, developed our skillset and toolset, and fell in love with the <a href="https://godotengine.org/">Godot Engine</a>.<br></p><p>Currently, we we developing our yet unnamed&nbsp;<a href="our_game.html" class="">underwater exploration game</a>, as well as maintaining our <a href="limboai.html" class="">LimboAI</a> plugin for Godot.<br></p></div></div><div class="editable-style image-element silex-id-1707163556018-0" title="Sergii of the Limbo of Wonders"><img src="assets/serg.png" alt="Portrait of Sergii of the Limbo of Wonders as a robot"></div><div class="editable-style image-element silex-id-1707163579258-1" title="Ola of the Limbo of Wonders"><img src="assets/ola_flipped.png" alt="Portrait of Ola of the Limbo of Wonders as a robot"></div></div></section><section class="container-element editable-style silex-id-1545056415237-3 section-element prevent-resizable page-contact page-about_us paged-element paged-element-visible"><div class="editable-style silex-id-1545056415233-2 container-element silex-element-content website-width"><div class="editable-style text-element text-style-2 silex-id-1545056530213-6"><div class="silex-element-content normal"><h2>Contact Us<br></h2></div>﻿﻿</div><div class="editable-style silex-id-1548871340538-0 html-element silex-component silex-component-form silex-use-height-not-minheight silex-element-content-full-height"><div class="silex-element-content"><form id="id_1708352583178_731" action="https://formspree.io/limboofwonders@gmail.com" method="POST">
   
   <div>
     <label for="field1">You</label>
