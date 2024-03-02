@@ -55,7 +55,7 @@
 <header class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable">
         <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><div class="editable-style silex-id-1552765147494-1 text-element silex-component prevent-resizable prevent-auto-z-index header hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1708352583175_22 closed">
+<div class="hamburger-menu_1709385511750_717 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -68,9 +68,9 @@
             
                 <li><a href="index.html">Home</a></li>
             
-                <li><a href="our_game.html" class="">Our Game</a></li>
+                <li><a href="our_game.html">Our Game</a></li>
             
-                <li><a href="limboai.html">LimboAI</a></li>
+                <li><a href="limboai.html" class="">LimboAI</a></li>
             
                 <li><a href="about_us.html">About Us</a></li>
             
@@ -84,13 +84,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1708352583175_22').classList.remove('open');
-    document.querySelector('.hamburger-menu_1708352583175_22').classList.add('closed');
+    document.querySelector('.hamburger-menu_1709385511750_717').classList.remove('open');
+    document.querySelector('.hamburger-menu_1709385511750_717').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1708352583175_22').classList.add('open');
-    document.querySelector('.hamburger-menu_1708352583175_22').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1709385511750_717').classList.add('open');
+    document.querySelector('.hamburger-menu_1709385511750_717').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -100,7 +100,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1708352583175_22').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1709385511750_717').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -108,10 +108,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1708352583175_22 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1709385511750_717 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1708352583175_22 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1709385511750_717 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -119,7 +119,7 @@
 })();
 </script>
 </div></div><div class="editable-style silex-id-1537543262916-6 text-element hide-on-mobile header"><div class="silex-element-content normal"><p><a href="index.html" class="">Home</a> <a href="our_game.html" class="">Our_Game</a> <a href="limboai.html" class="">LimboAI</a>&nbsp;<a href="about_us.html" class="">About_Us</a></p></div></div><a class="editable-style image-element silex-id-1708352108086-1" href="index.html"><img src="assets/LoW%20logo%2040px.png"></a></div>
-    </header><section class="container-element editable-style section-element silex-id-1545056615878-13 prevent-resizable page-hotels page-hidden paged-element paged-element-visible"><div class="editable-style container-element silex-element-content website-width silex-id-1545056615879-14"><div class="editable-style text-element text-style-2 silex-id-1545056615879-15"><div class="silex-element-content normal"><h2>Website Card<br></h2></div>﻿﻿</div><div class="editable-style image-element silex-id-1707167229157-29"><img src="assets/thumbnail_sharing.png"></div></div></section><section class="container-element editable-style silex-id-1537726585006-18 section-element prevent-resizable"><div class="editable-style silex-id-1537726585003-17 container-element silex-element-content website-width"><a class="editable-style text-element silex-id-1537541949036-0 footer" href="https://mastodon.gamedev.place/@limbo">
+    </header><section class="container-element editable-style section-element silex-id-1545056615878-13 prevent-resizable page-hotels page-hidden paged-element paged-element-visible"><div class="editable-style container-element silex-element-content website-width silex-id-1545056615879-14"><div class="editable-style text-element text-style-2 silex-id-1545056615879-15"><div class="silex-element-content normal"><h2>Website Card<br></h2></div>﻿﻿</div><a rel="me" href="https://mastodon.gamedev.place/@limbo">Mastodon</a><div class="editable-style image-element silex-id-1707167229157-29"><img src="assets/thumbnail_sharing.png"></div></div></section><section class="container-element editable-style silex-id-1537726585006-18 section-element prevent-resizable"><div class="editable-style silex-id-1537726585003-17 container-element silex-element-content website-width"><a class="editable-style text-element silex-id-1537541949036-0 footer" href="https://mastodon.gamedev.place/@limbo">
                 <div class="silex-element-content normal"><img src="assets/mastodon.png" alt="Mastodon social network logo" class=""></div>
             </a><a class="editable-style text-element footer silex-id-1537729664972-94" href="https://bsky.app/profile/limboofwonders.bsky.social">
                 <div class="silex-element-content normal"><img src="assets/bluesky.png" alt="BlueSky social network logo" class=""></div>
